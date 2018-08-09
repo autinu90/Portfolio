@@ -6,11 +6,11 @@
   "homepage": "https://austinu90.github.io/Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o docs/css/ --recursive",
-    "deploy": "gh-pages /d docs"
+    "deploy": "gh-pages -d docs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/autinu90/Portfolio.git"
+    "url": "https://github.com/autinu90/Portfolio"
   },
   "author": "austin Underwood",
   "license": "MIT",
