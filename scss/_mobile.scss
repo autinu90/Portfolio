@@ -63,7 +63,8 @@
 @include mediaSm {
     body {
         height: 40vh;
-        #footer {
+        #footer,
+        #mainfooter {
             height: 60vh
         }
         main {
