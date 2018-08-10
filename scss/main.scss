@@ -29,6 +29,12 @@
          background: rgba(lighten($primary-color, 2), 0.5);
          word-wrap: none;
      }
+     &.sm-footing{
+         margin-bottom: 2rem;
+         padding: 0.2rem 1rem;
+         background: rgba(lighten($primary-color, 2), 0.5);
+         word-wrap: none;
+     }
  }
 
  a {

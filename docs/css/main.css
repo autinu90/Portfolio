@@ -135,6 +135,13 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5);
     word-wrap: none; }
+  h1.sm-footing,
+  h2.sm-footing,
+  h3.sm-footing {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5);
+    word-wrap: none; }
 
 a {
   color: #f0ebe1;
@@ -311,7 +318,7 @@ body #contact {
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
+    font-size: 4rem; }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
