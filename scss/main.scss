@@ -158,10 +158,11 @@
  } //contact page
  body {
      #contact {
+         scroll-behavior: smooth;
          background-image: $primary-color;
+         background-color: rgba(darken($primary-color, 50), 0.5);
          background-repeat: no-repeat;
          background-position: center;
-         height: 100px;
          width: 100%;
          margin: 0;
          .boxes {
