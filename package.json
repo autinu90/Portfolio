@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "git": "^0.1.5",
     "hoek": "^5.0.4",
     "node-sass": "^4.9.2",
     "npm": "^6.3.0",
