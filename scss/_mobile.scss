@@ -16,7 +16,7 @@
 @include mediaMd {
     main {
         align-items: center;
-        text-align: center;
+        text-align: left;
         .lrg-heading {
             line-height: 1;
             margin-bottom: 2rem;
@@ -70,12 +70,13 @@
         main {
             #home h1 {
                 margin-top: 10vh;
-                text-align: center;
+                text-align: left;
                 margin-left: none;
             }
             .lg-heading {
                 margin-top: 1rem;
                 font-size: 5rem;
+                text-align: left;
             }
         }
         .projects {

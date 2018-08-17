@@ -217,8 +217,11 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template: 50px 40px auto 40px/repeat(autofit(40px), 1fr);
+  grid-template-areas: "h h h h h h h h h h m m"  "c c c c c c c c c c m m"  "c c c c c c c c c c m m"  "f f f f f f f f f f f f";
+  justify-content: space-around; }
   .projects img {
+    grid-area: c;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -276,7 +279,7 @@ body #contact {
   background: rgba(55, 55, 55, 0.5);
   color: #f0ebe1;
   text-align: right;
-  height: 60px;
+  grid-area: f;
   clear: both;
   padding: 1rem;
   z-index: 1;
@@ -286,7 +289,7 @@ body #contact {
   background: rgba(63, 63, 63, 0.5);
   color: #f0ebe1;
   text-align: right;
-  height: 60px;
+  grid-area: f;
   clear: both;
   padding: 1rem;
   z-index: 1;
@@ -300,10 +303,10 @@ body #contact {
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: left; }
     main .lrg-heading {
       line-height: 1;
       margin-bottom: 2rem; }
@@ -345,10 +348,11 @@ body #contact {
       height: 60vh; }
     body main #home h1 {
       margin-top: 10vh;
-      text-align: center;
+      text-align: left;
       margin-left: none; }
     body main .lg-heading {
       margin-top: 1rem;
-      font-size: 5rem; }
+      font-size: 5rem;
+      text-align: left; }
     body .projects {
       grid-template-columns: 1fr; } }

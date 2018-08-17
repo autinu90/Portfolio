@@ -29,7 +29,7 @@
          background: rgba(lighten($primary-color, 2), 0.5);
          word-wrap: none;
      }
-     &.sm-footing{
+     &.sm-footing {
          margin-bottom: 2rem;
          padding: 0.2rem 1rem;
          background: rgba(lighten($primary-color, 2), 0.5);
@@ -127,8 +127,15 @@
  .projects {
      display: grid;
      grid-gap: 0.7rem;
-     grid-template-columns: repeat( 3, 1fr);
+     grid-template: 50px 40px auto 40px / repeat(autofit(40px), 1fr);
+     grid-template-areas: 
+     "h h h h h h h h h h m m" 
+     "c c c c c c c c c c m m" 
+     "c c c c c c c c c c m m" 
+     "f f f f f f f f f f f f";
+     justify-content: space-around;
      img {
+         grid-area: c;
          background-repeat: no-repeat;
          background-position: center;
          width: 100%;
@@ -164,6 +171,7 @@
  } //contact page
  body {
      #contact {
+         
          scroll-behavior: smooth;
          background-image: $primary-color;
          background-color: rgba(darken($primary-color, 50), 0.5);
@@ -200,7 +208,7 @@
      background: rgba(darken($primary-color, 5), 0.5);
      color: set-text-color($primary-color);
      text-align: right;
-     height: 60px;
+     grid-area: f;
      clear: both;
      padding: 1rem;
      z-index: 1;
@@ -211,7 +219,7 @@
      background: rgba(darken($primary-color, 2), 0.5);
      color: set-text-color($primary-color);
      text-align: right;
-     height: 60px;
+     grid-area: f;
      clear: both;
      padding: 1rem;
      z-index: 1;
