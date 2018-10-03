@@ -3,12 +3,22 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    #footer,
+    #mainfooter {
+        height: 10vh;
+    }
 }
 
 //Desktops,laptops
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #footer,
+    #mainfooter {
+        height: 10vh;
     }
 }
 
@@ -66,16 +76,89 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #footer,
+    #mainfooter {
+        height: 10vh;
+    }
 }
 
 //Mobile
 @include mediaSm {
     body {
+        main {
+            align-items: center;
+            text-align: left;
+
+            .lrg-heading {
+                line-height: 1;
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+        }
+
         height: 40vh;
+
+        .bio {
+            font-size: 50%;
+        }
+
+        .bio-image {
+            width: 10.375rem;
+            height: 10.375rem;
+        }
+
+        ul.menu-nav,
+        div.menu-branding {
+            float: none;
+            width: 100%;
+            min-height: 0;
+
+            &.show {
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .menu-nav {
+            height: 75vh;
+            transform: translate3d(-100%, 0, 0);
+            font-size: 4rem;
+        }
+
+        .menu-branding {
+            height: 25vh;
+            transform: translate3d(100%, 0, 0);
+
+            .portrait {
+                width: 9.375rem;
+                height: 9.375rem;
+                background-image: $user-imageSm;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                border: solid .188rem $secondary-color;
+            }
+        }
+
+        .about-info {
+            font-size: 70%;
+            grid-template-areas: 'bioimage''bio''job1''job2''job3''skills';
+            grid-template-columns: 1fr;
+        }
+
+        .icons {
+            display: wrap;
+            width: 100%;
+        }
+
+        a.boxes {
+            font-size: 25%;
+        }
 
         #footer,
         #mainfooter {
-            height: 60vh
+            height: 15vh;
         }
 
         main {
@@ -87,7 +170,7 @@
 
             .lg-heading {
                 margin-top: .5rem;
-                font-size: .5rem;
+                font-size: .005rem;
                 text-align: left;
             }
         }
