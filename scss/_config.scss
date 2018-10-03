@@ -1,4 +1,4 @@
- $primary-color: #444;
+ $primary-color: rgb(80, 27, 11);
  $secondary-color: #eece1a;
  $tertiary-colour: #555;
  $show-home-image: true;
@@ -28,7 +28,9 @@
              }
          }
      }
- } // Set text color
+ } 
+ 
+ // Set text color
  @function set-text-color($color) {
      @if (lightness($color) > 40) {
          @return #4e6582;
@@ -36,7 +38,9 @@
      @else {
          @return #f0ebe1;
      }
- } // Media query mixins
+ } 
+ 
+ // Media query mixins
  @mixin mediaSm {
      @media screen and (max-width: 500px) {
          @content;

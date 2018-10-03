@@ -21,6 +21,7 @@
         .lrg-heading {
             line-height: 1;
             margin-bottom: 2rem;
+            font-size: 4rem;
         }
     }
 
@@ -46,14 +47,14 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            width: 150px;
-            height: 150px;
+            width: 9.375rem;
+            height: 9.375rem;
             background-image: $user-imageSm;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             border-radius: 50%;
-            border: solid 3px $secondary-color;
+            border: solid .188rem $secondary-color;
         }
     }
 
@@ -85,8 +86,8 @@
             }
 
             .lg-heading {
-                margin-top: 1rem;
-                font-size: 3rem;
+                margin-top: .5rem;
+                font-size: 1rem;
                 text-align: left;
             }
         }
