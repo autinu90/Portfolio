@@ -412,8 +412,8 @@ body #contact {
     body .icons {
       display: wrap;
       width: 100%; }
-    body a.boxes {
-      font-size: 25%; }
+    body .contact {
+      font-size: 70%; }
     body #footer,
     body #mainfooter {
       height: 15vh; }
