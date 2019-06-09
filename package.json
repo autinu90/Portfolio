@@ -6,7 +6,9 @@
   "homepage": "https://autinu90.github.io/Portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o docs/css/ --recursive",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^1.2.0",
-    "node-sass": "^4.9.2"
-  }
+    "node-sass": "^4.9.2",
+    "snyk": "^1.174.1"
+  },
+  "snyk": true
 }
