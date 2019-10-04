@@ -12,3 +12,8 @@ patch:
         patched: '2019-06-09T17:11:17.805Z'
     - node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
         patched: '2019-06-09T17:11:17.805Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:39:37.884Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T00:39:37.884Z'
