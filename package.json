@@ -17,9 +17,9 @@
   "author": "austin Underwood",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^1.2.0",
-    "node-sass": "^4.9.2",
-    "snyk": "^1.174.1"
+    "gh-pages": "^2.2.0",
+    "node-sass": "^7.0.2",
+    "snyk": "^1.429.0"
   },
   "snyk": true
 }
